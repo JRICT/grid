@@ -435,6 +435,26 @@
     margin-bottom: 16px;
     text-shadow: 0 0 12px var(--green-glow);
   }
+  .access-soon {
+    margin: 16px 0 0;
+    font-size: 9px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--green);
+    font-weight: 500;
+    padding: 3px 8px;
+    border: 1px solid var(--green-dim);
+    border-radius: 2px;
+    background: rgba(214, 51, 255, 0.05);
+    display: inline-block;
+  }
+
+  /* Place a centered single trailing box in the middle column on desktop */
+  @media (min-width: 881px) {
+    .access-box-center {
+      grid-column: 2;
+    }
+  }
   .access-headline {
     margin: 0 0 10px;
     font-size: 16px;
@@ -927,7 +947,7 @@
 <!-- ============ PROBLEM ============ -->
 <section>
   <div class="container narrow">
-    <h2 class="section-headline">You've Built Something People Love, But You're <span class="accent">Missing</span> The Resources To Sustain It Long-Term.</h2>
+    <h2 class="section-headline">You've built something people love, <span class="accent">without</span> the resources to sustain it long-term.</h2>
     <p class="section-lead">
       Your community is immensely valuable: founders find friends, investors get dealflow, and employers find their next hire. Despite that, you're under-resourced and overstretched.
     </p>
@@ -945,6 +965,7 @@
 <section>
   <div class="container">
     <h2 class="section-headline">Find Sustainability With <span class="accent">The Grid.</span></h2>
+    <p class="section-lead">The Grid connects the UK's top founder communities into one shared ops and revenue engine.</p>
 
     <div class="value-grid">
       <div class="value-box">
@@ -1076,7 +1097,7 @@
 <!-- ============ GET ACCESS TO ============ -->
 <section>
   <div class="container">
-    <h2 class="section-headline">Plug Into The Power Of...</h2>
+    <h2 class="section-headline">Plug Into The Power Of The Collective</h2>
 
     <div class="access-grid">
       <div class="access-box">
@@ -1087,20 +1108,22 @@
 
       <div class="access-box">
         <div class="access-tick">✓</div>
-        <h3 class="access-headline">The Power Of The Collective</h3>
-        <p class="access-body">A private network of community builders. Deal-sharing and intel with people who love what you love.</p>
+        <h3 class="access-headline">A Community Of Community Builders</h3>
+        <p class="access-body">Support from people who get it.</p>
       </div>
 
       <div class="access-box">
         <div class="access-tick">✓</div>
-        <h3 class="access-headline">Pre-Negotiated Venue Partners <span class="value-item-soon">coming soon</span></h3>
+        <h3 class="access-headline">Pre-Negotiated Venue Partners</h3>
         <p class="access-body">Better spaces for events, dinners, and workshops — without the scramble.</p>
+        <p class="access-soon">Coming soon</p>
       </div>
 
-      <div class="access-box">
+      <div class="access-box access-box-center">
         <div class="access-tick">✓</div>
-        <h3 class="access-headline">A Curated Talent Pool <span class="value-item-soon">coming soon</span></h3>
+        <h3 class="access-headline">A Curated Talent Pool</h3>
         <p class="access-body">The most cracked operators in the UK — ready to plug into your members' startups and scaleups.</p>
+        <p class="access-soon">Coming soon</p>
       </div>
     </div>
   </div>
@@ -1116,6 +1139,7 @@
     <p class="section-lead-accent">
       Now we're building the infrastructure so other founder communities can do the same.
     </p>
+    <p class="section-lead">Here are our stats.</p>
 
     <div class="stats">
       <div class="stat">
